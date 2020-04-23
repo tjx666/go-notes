@@ -10,7 +10,6 @@ var globalVariable int
 // globalVariable = 666; // syntax error: non-declaration statement outside function body
 
 var standardDefinition = 999
-
 // !: 短变量声明不允许在全局环境下声明，老老实实使用 var 声明
 // shortDefinition := 666 // syntax error: non-declaration statement outside function body
 
@@ -112,12 +111,11 @@ func testConst() {
 		c5 = 5 // 5
 		c6     // 5
 	)
-
 	fmt.Println(c1, c2, c3, c4, c5, c6) // => 0 1 1 1 5 5
 }
 
 // ------------------------ iota -----------------------------
-func testItoa() {
+func testIota() {
 	// 发音：/aɪˈoʊtə/
 	// 这个词就是全拼，可以理解为 for 循环中的 i 下标，表示迭代索引的意思
 	//参考：https://stackoverflow.com/questions/31650192/whats-the-full-name-for-iota-in-golang
@@ -177,5 +175,5 @@ func testItoa() {
 func main() {
 	testInitValue()
 	testConst()
-	testItoa()
+	testIota()
 }
